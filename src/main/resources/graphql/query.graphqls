@@ -1,0 +1,16 @@
+type Query {
+	getUserById(id:ID):User
+
+}
+type Subscription {
+	getSubscriberCounter(id:Int): User
+}
+type Mutation {
+   saveUser(name:String):User
+}
+
+type User {
+	id: ID
+	name:String
+	subscriberCounter:Int
+}
